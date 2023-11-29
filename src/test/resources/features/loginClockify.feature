@@ -1,6 +1,6 @@
-Feature: Agregar horas a Workspace
+Feature: Login
 
-  @Demo
+  @Test
   Scenario Outline: Login exitoso
     Given la aplicacion cargo correctamente
     When el usuario registrado ingresa mail '<mail>' , contraseña '<pass>'
