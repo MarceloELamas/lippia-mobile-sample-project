@@ -15,4 +15,9 @@ public class loginClockifyService {
         MobileActionManager.waitVisibility(loginClockifyConstants.TIME_ENTRIES_TEXT);
         Assert.assertTrue(MobileActionManager.isVisible(loginClockifyConstants.TIME_ENTRIES_TEXT), "No se encuentra el texto Time Entries");
     }
+
+    public static void loginRegisterVisible() {
+        MobileActionManager.waitVisibility(loginClockifyConstants.LOGIN_REGISTER_TEXT);
+        Assert.assertTrue(MobileActionManager.isVisible(loginClockifyConstants.LOGIN_REGISTER_TEXT), "No se encuentra el texto Login");
+    }
 }

@@ -30,4 +30,19 @@ public class loginClockifySteps extends PageSteps {
     public void validoQueElTextoTimeEntriesSeaVisible() {
         loginClockifyService.loginTextVisible();
     }
+
+    @When("hago click LOGOUT")
+    public void hagoClickLOGOUT() {
+        MobileActionManager.click(loginClockifyConstants.LOGOUT_BUTTON);
+    }
+
+    @When("hago click en CONFIRM")
+    public void hagoClickEnCONFIRM() {
+        MobileActionManager.click(loginClockifyConstants.CONFIRM_BUTTON);
+    }
+
+    @Then("valido que el texto LOG IN sea visible")
+    public void validoQueElTextoLOGINSeaVisible() {
+        loginClockifyService.loginRegisterVisible();
+    }
 }
